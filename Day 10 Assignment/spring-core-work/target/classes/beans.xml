@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+<bean id="line" class="com.manipal.assignment.spring_core_work.Line">
+<property name="point1" ref="point1"></property>
+<property name="point2" ref="point2"></property>
+</bean>
+
+<bean id="triangle" class="com.manipal.assignment.spring_core_work.Triangle">
+<property name="point1" ref="point1"></property>
+<property name="point2" ref="point2"></property>
+<property name="point3" ref="point3"></property>
+</bean>
+
+<bean id="point1" class="com.manipal.assignment.spring_core_work.Point">
+<property name="x" value="1"></property>
+<property name="y" value="-1"></property>
+</bean>
+
+<bean id="point2" class="com.manipal.assignment.spring_core_work.Point">
+<property name="x" value="2"></property>
+<property name="y" value="1"></property>
+</bean>
+
+<bean id="point3" class="com.manipal.assignment.spring_core_work.Point">
+<property name="x" value="4"></property>
+<property name="y" value="5"></property>
+</bean>
+
+
+</beans>
