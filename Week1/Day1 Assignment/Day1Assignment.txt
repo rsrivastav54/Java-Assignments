@@ -1,0 +1,69 @@
+﻿Assignment - 1
+A good program must be time efficient and memory efficient. Performance of a program can be improved by optimizing the code. Optimizing can be done at design level and source code level	
+
+Identify different ways to solve a problem and choose the best algorithm
+1.	Finding a prime number 
+2.	To find whether a  number is Armstrong number  
+3.	To find  palindrome words in a given string
+4.	To remove all the duplicate  elements in an integer array
+
+Assignment – 2
+Conduct the Loop Optimisation for the following  source code  to improve the program’s performance.
+1.
+for (i=1; i<count; i++) { 
+	a[i] = i*j*k*l*m*n; 
+} 
+
+2.
+for (discount = 0; discount < numD; discount++) 
+{ 
+ for (rate = 0; rate < numR; rate++) 
+ { 
+     rateTbl[rate] = rateTbl[rate] * discountTbl[discount]; 
+ } 
+} 
+
+3.
+for (i=1; i<count; i++) { 
+   a[i] = Math.pow(log(i) / log(3), 2); 
+} 
+
+Assignment-3
+
+1. What is the result that will be printed out ?
+public class Test{
+public static void main(String[] args)
+{
+ float f=(1/4) *10;
+int i = Math.round(f);
+System.out.println(i);
+}}
+Output -> 0
+
+2.
+Which of the following are valid declarations?
+1. int i = 0XCAFE; Yes (Hex number)
+2. boolean b = 0; No
+3. char c = 'A'; Yes
+4. byte b = 128; No
+5. char c = ""A""; No
+
+3. 
+class Test{
+ public static void main(String [] args){
+ int x= 2;
+ int y= 1;
+ for (int z = 0; z < 5; z++){
+  if (( ++x > 2 ) || (++y > 2)){
+   x++;
+ }}
+ System.out.println(x + "" "" + y);
+ }
+}
+What is the output of the program?
+Output -> 12 1
+
+
+
+
+
