@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="organization"
+		class="com.manipal.spring_core_demo4.Organization">
+		<property name="id" value="111"></property>
+		<property name="name" value="Manipal"></property>
+		<property name="employeeList">
+			<list>
+				<ref bean="employee1" />
+				<ref bean="employee2" />
+				<ref bean="employee3" />
+			</list>
+		</property>
+
+
+	</bean>
+
+
+
+	<bean id="employee1"
+		class="com.manipal.spring_core_demo4.Employee">
+		<constructor-arg name="empId" value="1001" />
+		<constructor-arg name="empName" value="Ram" />
+		<constructor-arg name="salary" value="89000" />
+		<constructor-arg name="address" ref="address1" />
+
+	</bean>
+
+	<bean id="employee2"
+		class="com.manipal.spring_core_demo4.Employee">
+		<constructor-arg name="empId" value="1002" />
+		<constructor-arg name="empName" value="Rama" />
+		<constructor-arg name="salary" value="99000" />
+		<constructor-arg name="address" ref="address2" />
+
+	</bean>
+
+	<bean id="employee3"
+		class="com.manipal.spring_core_demo4.Employee">
+		<constructor-arg name="empId" value="1003" />
+		<constructor-arg name="empName" value="Raman" />
+		<constructor-arg name="salary" value="23000" />
+		<constructor-arg name="address" ref="address3" />
+
+	</bean>
+
+	<bean id="address1" class="com.manipal.spring_core_demo4.Address">
+		<property name="streetNo">
+			<value>123</value>
+		</property>
+		<property name="city">
+			<value>Bengaluru</value>
+		</property>
+		<property name="pin">
+			<value>110022</value>
+		</property>
+	</bean>
+
+	<bean id="address2" class="com.manipal.spring_core_demo4.Address">
+		<property name="streetNo">
+			<value>155</value>
+		</property>
+		<property name="city">
+			<value>Lucknow</value>
+		</property>
+		<property name="pin">
+			<value>220022</value>
+		</property>
+	</bean>
+
+	<bean id="address3" class="com.manipal.spring_core_demo4.Address">
+		<property name="streetNo">
+			<value>209</value>
+		</property>
+		<property name="city">
+			<value>Delhi</value>
+		</property>
+		<property name="pin">
+			<value>550063</value>
+		</property>
+	</bean>
+
+
+
+
+
+
+</beans>

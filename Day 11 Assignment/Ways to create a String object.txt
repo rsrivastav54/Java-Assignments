@@ -1,0 +1,6 @@
+1) String str="Hello!";
+
+2) String str1= new String("Hello!");
+
+3) char ch[]={ 'H','e','l','l','o','!',};
+   String str1=new String(ch);
